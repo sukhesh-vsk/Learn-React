@@ -1,0 +1,44 @@
+/* #login-home{
+    display: flex;
+    position: relative;
+    margin: 10%;
+    left: 80px;
+} */
+
+#login-form{
+    position: relative;
+    left: 80px;
+    top: 100px;
+    /* padding:130px; */
+    border: 3px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: aliceblue;
+    text-align: left;
+    /* justify-content: center; */
+}
+
+span {
+    font-size: 25px;
+    align-content: baseline;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+}
+
+#user-field, #pwd-field {
+    border-radius: 5px;
+    height: 20px;
+    width: 250px;
+}
+
+body{
+    background-image: url("https://images6.alphacoders.com/133/thumbbig-1330235.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 300%;
+}
