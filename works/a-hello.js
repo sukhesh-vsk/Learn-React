@@ -4,6 +4,14 @@ var h1;
 document.addEventListener('DOMContentLoaded', function() {
     h1 = document.querySelector('h1');
     document.querySelector('button').onclick = counter;
+
+    var buttons = document.querySelectorAll('#color-btn');
+    buttons.forEach(function(button) {
+        button.onclick = function() {
+            h1.style.color = button.value;
+        };
+    });
+
 });
 
 function counter(){
@@ -18,5 +26,4 @@ function counter(){
 function reset(){
     count = 0;
     h1.innerHTML = count;
-    
 }
