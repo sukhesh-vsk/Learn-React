@@ -4,15 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hello</title>
-    </head>
-    <body>
-        <h1>Count</h1>
         <script>
             var count = 0;
-            const h1 = document.querySelector('h1');
+            var h1;
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                h1 = document.querySelector('h1');
+                document.querySelector('button').onclick = counter;
+            });
+            
             function counter(){
                 count++;
                 h1.innerHTML = count;
+
+                if(count % 10 === 0){
+                    alert(`counter is ${count}`);
+                }
             }
 
             function reset(){
@@ -21,7 +28,11 @@
                 
             }
         </script>
-        <button onclick="counter()">Click Me</button>
+    </head>
+    <body>
+        <h1>Count</h1>
+        <button>Click Me</button>
         <button onclick="reset()">Reset</button>
+        
     </body>
 </html>
