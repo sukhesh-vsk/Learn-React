@@ -4,11 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hello</title>
-        <script>
-            alert("hello");
-        </script>
     </head>
     <body>
-        <h1>Hello</h1>
+        <h1>Count</h1>
+        <script>
+            var count = 0;
+            const h1 = document.querySelector('h1');
+            function counter(){
+                count++;
+                h1.innerHTML = count;
+            }
+
+            function reset(){
+                count = 0;
+                h1.innerHTML = count;
+                
+            }
+        </script>
+        <button onclick="counter()">Click Me</button>
+        <button onclick="reset()">Reset</button>
     </body>
 </html>
