@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import MyClassComp from './Component/MyClassComp';
+import Greet from './Component/Greeting';
+// import MyClassComp from './Component/MyClassComp';
 // import Form from './Component/Form';
 // import Helloworld from './Component/HelloWorld';
 
@@ -8,7 +9,7 @@ import MyClassComp from './Component/MyClassComp';
 export default function App() {
   return (
     <div>
-      <MyClassComp />
+      <Greet />
     </div>
   )
 };
