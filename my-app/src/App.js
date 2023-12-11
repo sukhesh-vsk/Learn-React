@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Helloworld from './Component/HelloWorld';
-import Form from './Component/Form';
+import MyClassComp from './Component/MyClassComp';
+// import Form from './Component/Form';
+// import Helloworld from './Component/HelloWorld';
+
 
 export default function App() {
   return (
     <div>
-      <Helloworld/>
-      <Form/>
+      <MyClassComp />
     </div>
   )
 };
