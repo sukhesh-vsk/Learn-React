@@ -1,12 +1,12 @@
 import React from 'react';
 import MyForm from './Form';
-import Helloworld from './HelloWorld';
+import { Hello } from './HelloWorld';
 
 class MyClassComp extends React.Component {
     render() {
         return (
             <div>
-                <Helloworld />
+                <Hello />
                 <MyForm></MyForm>
             </div>
         )
