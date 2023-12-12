@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
-import Greet from './Component/Greeting';
+import Counter from './Component/Counter';
+// import Buttons from './Component/Buttons';
+// import Counter from './Component/Counter';
+// import Greet from './Component/Greeting';
 // import MyClassComp from './Component/MyClassComp';
 // import Form from './Component/Form';
 // import Helloworld from './Component/HelloWorld';
@@ -9,7 +12,8 @@ import Greet from './Component/Greeting';
 export default function App() {
   return (
     <div>
-      <Greet />
+      <Counter />
     </div>
   )
 };
+
