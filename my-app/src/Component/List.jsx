@@ -9,12 +9,16 @@ const Disp=(props)=>{
 const List = () => {
     const Names = ['Ramesh', 'Suresh', 'Ganesh', 'Sukhesh'];
     const stName = Names.map(
-        (stu) => <Disp name={stu}/>
+        (stu, idx) => {
+            return (
+                <li>{`${stu}`}</li>
+            )
+        }
     );
 
     return (
-        stName
+        <ol>{stName}</ol>
     );
 }
 
-export default List
+export default List;
