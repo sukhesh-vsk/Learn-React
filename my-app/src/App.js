@@ -15,6 +15,7 @@ export default function App() {
   return (
     <div>
       <List />
+      <List />
     </div>
   )
 };
