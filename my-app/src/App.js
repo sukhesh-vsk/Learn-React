@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import List from './Component/List';
+import ErrorBoundary from './Component/ErrorBoundary';
+import Car from './Component/Car';
+// import List from './Component/List';
 // import TwoWayBind from './Component/TwoWayBinding';
 // import Counter from './Component/Counter';
 // import Buttons from './Component/Buttons';
@@ -14,8 +16,9 @@ import List from './Component/List';
 export default function App() {
   return (
     <div>
-      <List />
-      <List />
+      <ErrorBoundary>
+          <Car car="JCBL"/>
+      </ErrorBoundary>
     </div>
   )
 };
