@@ -14,15 +14,18 @@ import React from 'react';
 // import Greet from './Component/Greeting';
 // import MyClassComp from './Component/MyClassComp';
 // import Helloworld from './Component/HelloWorld'; 
-import ErrorHandle from './Component/Error/ErrorHandle';
-import Divide from './Component/Error/Divide';
+// import ErrorHandle from './Component/Error/ErrorHandle';
+// import Divide from './Component/Error/Divide';
+import { Provider } from 'react-redux';
+import { Store } from './Component/Redux-Counter/Store';
+import Counter from './Component/Redux-Counter/Counter';
 import './App.css'
 
 export default function App() {
   return (
-      <ErrorHandle fallback="Something went wrong...">
-        <Divide/>
-      </ErrorHandle>
+      <Provider store={Store}>
+        <Counter />
+      </Provider>
   )
 };
 
