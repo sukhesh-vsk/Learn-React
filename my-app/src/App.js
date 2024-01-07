@@ -17,14 +17,16 @@ import React from 'react';
 // import ErrorHandle from './Component/Error/ErrorHandle';
 // import Divide from './Component/Error/Divide';
 import { Provider } from 'react-redux';
-import { Store } from './Component/Redux-Counter/Store';
-import Counter from './Component/Redux-Counter/Counter';
+// import { Store } from './Component/Redux-Counter/Store';
+// import Counter from './Component/Redux-Counter/Counter';
+import Store from './Component/Redux-Theme/Store';
+import Theme from './Component/Redux-Theme/Theme';
 import './App.css'
 
 export default function App() {
   return (
       <Provider store={Store}>
-        <Counter />
+        <Theme />
       </Provider>
   )
 };
