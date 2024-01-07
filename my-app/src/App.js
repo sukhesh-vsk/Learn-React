@@ -1,6 +1,8 @@
 import React from 'react';
-import './App.css'
-import Test from './Component/Test';
+
+import TodoProvider from './Component/Context-API/providers/todoprovider';
+import Todolist from './Component/Context-API/comp/todolist';
+// import Test from './Component/Test';
 // import LoginForm from './Component/LoginForm'
 // import Form from './Component/Form';
 // import List from './Component/List';
@@ -11,12 +13,15 @@ import Test from './Component/Test';
 // import Greet from './Component/Greeting';
 // import MyClassComp from './Component/MyClassComp';
 // import Helloworld from './Component/HelloWorld'; 
+import './App.css'
+import Taskcount from './Component/Context-API/comp/taskcount';
 
 export default function App() {
   return (
-    <div>
-      <Test />
-    </div>
+    <TodoProvider>
+      <Todolist/>
+      <Taskcount/>
+    </TodoProvider>
   )
 };
 
