@@ -4,10 +4,15 @@ import { toggleTheme } from "./ThemeActions";
 
 const Theme = () => {
     const dispatch = useDispatch();
-    const theme = useSelector(state => state);
-    // console.log(theme);
+    const theme = useSelector(state => state.theme);
+    console.log(theme);
+    const colorScheme = {
+        color: theme==='light' ? 'black' : 'white',
+        backgroundColor: theme === 'light' ? 'white' : 'black' ,
+    }
     const style = {
         div: {
+            ...colorScheme,
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -15,12 +20,11 @@ const Theme = () => {
             height: '100vh',
         },
         btn: {
+            ...colorScheme,
             height: '40px',
             width: '150px',
             borderRadius: '10px',
             cursor: 'pointer',
-            color: theme.color,
-            backgroundColor: theme.backgroundColor,
         }
     }
     const handleThemeChange = () => {
@@ -30,7 +34,7 @@ const Theme = () => {
     return (
         <div style={style.div} >
             <h1>Theme</h1>
-            <button onClick={handleThemeChange}>Change Theme</button>
+            <button onClick={handleThemeChange} style={style.btn}>Change Theme</button>
         </div>
     )
 }
